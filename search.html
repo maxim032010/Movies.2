@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <meta name="title" content="Movies">
+    <meta name="description" content="Movies is a popular movie app made by Movies.HD.">
+    <link rel="shortcut icon" href="./fav-icon.png" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/global.js" defer></script>
+    <script src="./assets/js/index.js" type="module"></script>
+    <script src="./assets/js/search.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/logo2.png" width="140" height="32"
+            alt="Movies Home">
+        </a>
+
+        <div class="search-box" search-box>
+            <div class="search-wrapper" search-wrapper>
+                <input type="text" name="search" aria-label="search movies"
+                placeholder="Search any movies..."
+                 class="search-field" autocomplete="off" search-field>
+
+                 <img src="./assets/images/search.png" width="24" height="24"
+                 alt="search" class="leading-icon">
+            </div>
+
+            <button class="search-btn" search-toggler>
+                <img src="./assets/images/close.png" width="24" height="24"
+                alt="close search box">
+            </button>
+        </div>
+
+        <button class="search-btn" search-toggler menu-close>
+            <img src="./assets/images/search.png" width="24" height="24"
+            alt="open search box">
+        </button>
+
+        <button class="menu-btn" menu-btn menu-toggler>
+            <img src="./assets/images/menu.png" width="24" height="24"
+            alt="open menu" class="menu">
+            <img src="./assets/images/menu-close.png" width="24" height="24"
+            alt="close menu" class="close">
+        </button>
+
+    </header>
+
+ <nav class="sidebar" sidebar>
+    <div class="sidebar-inner">
+
+        <div class="sidebar-list">
+
+            <p class="title">Genre</p>
+
+            <a href="./files/Genre/Kinofilme.html" menu-close 
+            class="sidebar-link">Kinofilme</a>
+
+            <a href="./files/Genre/Animation.html" menu-close 
+            class="sidebar-link">Animation</a>
+
+            <a href="./files/Genre/Action.html" menu-close 
+            class="sidebar-link">Action</a>
+
+            <a href="./files/Genre/Adventure.html" menu-close 
+            class="sidebar-link">Adventure</a>
+
+            <a href="./files/Genre/Comedy.html" menu-close 
+            class="sidebar-link">Comedy</a>
+
+            <a href="./files/Genre/Crime.html" menu-close 
+            class="sidebar-link">Crime</a>
+
+            <a href="./files/Genre/Drama.html" menu-close 
+            class="sidebar-link">Drama</a>
+
+            <a href="./files/Genre/Familiy.html" menu-close 
+            class="sidebar-link">Family</a>
+
+            <a href="./files/Genre/Fantasy.html" menu-close 
+            class="sidebar-link">Fantasy</a>
+
+            <a href="./files/Genre/History.html" menu-close 
+            class="sidebar-link">History</a>
+
+            <a href="./files/Genre/Horror.html" menu-close 
+            class="sidebar-link">Horror</a>
+
+            <a href="./files/Genre/Musik.html" menu-close 
+            class="sidebar-link">Musik</a>
+
+            <a href="./files/Genre/Mystery.html" menu-close 
+            class="sidebar-link">Mystery</a>
+
+            <a href="./files/Genre/Sci-Fi.html" menu-close 
+            class="sidebar-link">Sci-Fi</a>
+
+            <a href="./files/Genre/Thriller.html" menu-close 
+            class="sidebar-link">Thriller</a>
+
+        </div>
+
+        <div class="sidebar-list">
+
+            <p class="title">Sprachen</p>
+
+            <a href="./movie-list.html" menu-close 
+            class="sidebar-link">Deutsch</a>
+
+        </div>
+
+        <div class="sidebar-footer">
+            <p class="copyright">
+                Copyright 2024 <a href="">Movies.HD</a>
+            </p>
+
+            <img src="./assets/images/tmdb-logo.svg" width="130"
+            height="17" alt="the movie database logo">
+        </div>
+
+    </div>
+ </nav>
+ <div class="overlay" overlay menu-toggler></div>
+
+ <article class="container" page-content>
+
+ <div class="search-modal active" id="searchModal">
+
+    <p class="label">Ergebnisse für</p>
+
+    <h1 class="heading" id="searchTerm"></h1>
+
+    <div class="movie-list">
+        <div class="grid-list" id="searchResults">
+            
+        </div>
+    </div>
+
+</div>
+
+</article>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchField = document.querySelector('.search-field');
+    
+        searchField.addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                const searchTerm = searchField.value.trim();
+                if (searchTerm !== '') {
+                    // Weiterleitung zur Search.html-Seite mit dem Suchbegriff als Query-Parameter
+                    window.location.href = `search.html?q=${encodeURIComponent(searchTerm)}`;
+                }
+            }
+        });
+    });
+    </script>    
+
+   
+</body>
+</html>

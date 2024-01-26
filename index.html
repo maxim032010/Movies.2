@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <meta name="title" content="Movies">
+    <meta name="description" content="Movies is a popular movie app made by Movies.HD.">
+    <link rel="shortcut icon" href="./fav-icon.png" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/global.js" defer></script>
+    <script src="./assets/js/index.js" type="module"></script>
+    <script src="./assets/js/search.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/logo2.png" width="140" height="32"
+            alt="Movies Home">
+        </a>
+
+        <div class="search-box" search-box>
+            <div class="search-wrapper" search-wrapper>
+                <input type="text" name="search" aria-label="search movies"
+                placeholder="Search any movies..."
+                 class="search-field" autocomplete="off" search-field>
+
+                 <img src="./assets/images/search.png" width="24" height="24"
+                 alt="search" class="leading-icon">
+            </div>
+
+            <button class="search-btn" search-toggler>
+                <img src="./assets/images/close.png" width="24" height="24"
+                alt="close search box">
+            </button>
+        </div>
+
+        <button class="search-btn" search-toggler menu-close>
+            <img src="./assets/images/search.png" width="24" height="24"
+            alt="open search box">
+        </button>
+
+        <button class="menu-btn" menu-btn menu-toggler>
+            <img src="./assets/images/menu.png" width="24" height="24"
+            alt="open menu" class="menu">
+            <img src="./assets/images/menu-close.png" width="24" height="24"
+            alt="close menu" class="close">
+        </button>
+
+    </header>
+
+ <nav class="sidebar" sidebar>
+    <div class="sidebar-inner">
+
+        <div class="sidebar-list">
+
+            <p class="title">Genre</p>
+
+            <a href="./files/Genre/Kinofilme.html" menu-close 
+            class="sidebar-link">Kinofilme</a>
+
+            <a href="./files/Genre/Animation.html" menu-close 
+            class="sidebar-link">Animation</a>
+
+            <a href="./files/Genre/Action.html" menu-close 
+            class="sidebar-link">Action</a>
+
+            <a href="./files/Genre/Adventure.html" menu-close 
+            class="sidebar-link">Adventure</a>
+
+            <a href="./files/Genre/Comedy.html" menu-close 
+            class="sidebar-link">Comedy</a>
+
+            <a href="./files/Genre/Crime.html" menu-close 
+            class="sidebar-link">Crime</a>
+
+            <a href="./files/Genre/Drama.html" menu-close 
+            class="sidebar-link">Drama</a>
+
+            <a href="./files/Genre/Familiy.html" menu-close 
+            class="sidebar-link">Family</a>
+
+            <a href="./files/Genre/Fantasy.html" menu-close 
+            class="sidebar-link">Fantasy</a>
+
+            <a href="./files/Genre/History.html" menu-close 
+            class="sidebar-link">History</a>
+
+            <a href="./files/Genre/Horror.html" menu-close 
+            class="sidebar-link">Horror</a>
+
+            <a href="./files/Genre/Musik.html" menu-close 
+            class="sidebar-link">Musik</a>
+
+            <a href="./files/Genre/Mystery.html" menu-close 
+            class="sidebar-link">Mystery</a>
+
+            <a href="./files/Genre/Sci-Fi.html" menu-close 
+            class="sidebar-link">Sci-Fi</a>
+
+            <a href="./files/Genre/Thriller.html" menu-close 
+            class="sidebar-link">Thriller</a>
+
+        </div>
+
+        <div class="sidebar-list">
+
+            <p class="title">Sprachen</p>
+
+            <a href="./movie-list.html" menu-close 
+            class="sidebar-link">Deutsch</a>
+
+        </div>
+
+        <div class="sidebar-footer">
+            <p class="copyright">
+                Copyright 2024 <a href="">Movies.HD</a>
+            </p>
+
+            <img src="./assets/images/tmdb-logo.svg" width="130"
+            height="17" alt="the movie database logo">
+        </div>
+
+    </div>
+ </nav>
+ <div class="overlay" overlay menu-toggler></div>
+
+ <article class="container" page-content>
+
+    <section class="banner" aria-label="slider">
+
+        <div class="banner-slider">
+
+            <div class="slider-item active" slider-item>  <!-- 1 -->
+                <img src="./assets/images/Der-Gestifelte-Kater-quer.png" alt="Der Gestiefelte Kater" class="img-cover" loading="eager">
+
+                <div class="banner-content">
+
+                    <h2 class="heading">
+                        Der Gestiefelte Kater
+                    </h2>
+
+                    <div class="meta-list">
+                        <div class="meta-item">2022</div>
+
+                        <div class="meta-item card-badge">7.5</div>
+                    </div>
+
+                    <p class="genre">Animation, Action, Adventure</p>
+
+                    <p class="banner-text">
+                       Puss in Boots discovers that his passion for adventure
+                       has taken its toll: he has burned trough eight of
+                       his nine lives, leaving him with only one life left.
+                       puss sets out an epic journey to find the mythical
+                       Last Wish and restore his nine lives. 
+                    </p>
+
+                    <a href="./files/Movies/Der-Gestiefelte-Kater.html" class="btn">
+                        <img src="./assets/images/play_circle.png" width="24" height="24" aria-hidden="true" alt="Play">
+
+                        <span class="span">Watch Now</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="slider-item" slider-item>  <!-- 2 -->
+                <img src="./assets/images/Wonka-quer.png" alt="Der Gestiefelte Kater" class="img-cover" loading="eager">
+
+                <div class="banner-content">
+
+                    <h2 class="heading">
+                        Wonka
+                    </h2>
+
+                    <div class="meta-list">
+                        <div class="meta-item">2024</div>
+
+                        <div class="meta-item card-badge">8.4</div>
+                    </div>
+
+                    <p class="genre">Animation, Action, Adventure</p>
+
+                    <p class="banner-text">
+                       Puss in Boots discovers that his passion for adventure
+                       has taken its toll: he has burned trough eight of
+                       his nine lives, leaving him with only one life left.
+                       puss sets out an epic journey to find the mythical
+                       Last Wish and restore his nine lives. 
+                    </p>
+
+                    <a href="./files/Movies/Wonka.html" class="btn">
+                        <img src="./assets/images/play_circle.png" width="24" height="24" aria-hidden="true" alt="Play">
+
+                        <span class="span">Watch Now</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="slider-item" slider-item>  <!-- 3 -->
+                <img src="./assets/images/Der-Junge-und-der-Reiher-Quer-png" alt="Der Junge und der Reiher" class="img-cover" loading="eager">
+
+                <div class="banner-content">
+
+                    <h2 class="heading">
+                        Der Junge und der Reiher
+                    </h2>
+
+                    <div class="meta-list">
+                        <div class="meta-item">2023</div>
+
+                        <div class="meta-item card-badge">8.0</div>
+                    </div>
+
+                    <p class="genre">Filme , Animation , Adventure , Drama , Fantasy , Kinofilme</p>
+
+                    <p class="banner-text">
+                        Während eines Luftangriffs auf Tokio kommt die Mutter des zwölf Jahre alten Jungen Mahito Maki (Stimme im japanischen Original: Soma Santoki) ums Leben.
+                        Als sein Vater daraufhin die jüngere Schwester seiner verstorbenen Frau heiratet und mir seiner Familie aus der Stadt aufs Land zieht, beginnt für Mahito eine 
+                        schwere Zeit. Dieser kann sich mit der neuen Familiensituation nämlich überhaupt nicht anfreunden. Schon bald stößt er auf einen mysteriösen Turm und
+                        einen sprechenden Graureiher (Masaki Suda), der ihm überraschenderweise verkündet, dass seine Mutter noch am Leben ist und in diesem eigenartigen
+                        Bauwerk gefangen gehalten wird. Als dann auch noch Mahitos Stiefmutter verschwindet, macht sich der junge Abenteurer auf den Weg zu dem
+                        geheimnisvollen Turm. Dabei entdeckt er eine magische Welt voller fantastischer Kreaturen. Doch auf seiner Reise lauern auch ein paar Gefahren auf Mahito...
+                    </p>
+
+                    <a href="./files/Movies/Der-Junge-und-der-Reiher.html" class="btn">
+                        <img src="./assets/images/play_circle.png" width="24" height="24" aria-hidden="true" alt="Play">
+
+                        <span class="span">Watch Now</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider-control">
+
+            <div class="control-inner">
+
+                <button class="poster-box slider-item active">
+                    <img class="poster-box slider-item active" src="./assets/images/Der-Gestiefelte-Kater.png" alt="Slide to Der Gestiefelte Kater" loading="lazy" draggable="false"> <!-- 1 -->
+                </button>
+
+                <button class="poster-box slider-item active">
+                    <img class="poster-box slider-item" src="./assets/images/Wonka.png" alt="Slide to Wonka" loading="lazy" draggable="false">  <!-- 2 -->
+                </button>
+
+                <button class="poster-box slider-item active">
+                    <img class="poster-box slider-item" src="./assets/images/Der-Junge-und-der-Reiher.png" alt="Slide to Der Junge und der Reiher" loading="lazy" draggable="false">  <!-- 3 -->
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="movie-list" aria-label="upcoming movie">
+
+        <div class="title-wrapper">
+            <h3 class="title-large">Frisches aus dem Kino!</h3>
+        </div>
+
+        <div class="slider-list">
+            <div class="slider-inner">
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/Der-Gestiefelte-Kater.png" alt="Der Gestiefelte Kater" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">Der Gestiefelte Kater</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">8.4</span>
+                        </div>
+
+                        <div class="card-badge">2022</div>
+                    </div>
+
+                    <a href="./files/Movies/Der-Gestiefelte-Kater.html" class="card-btn" title="Der Gestiefelte Kater"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/Wonka.png" alt="Wonka" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">Wonka</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">2.8</span>
+                        </div>
+
+                        <div class="card-badge">2023</div>
+                    </div>
+
+                    <a href="./files/Movies/Wonka.html" class="card-btn" title="Wonka"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/Der-Junge-und-der-Reiher.png" alt="Der Junge und der Reiher" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">Der Junge und der Reiher</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">8.0</span>
+                        </div>
+
+                        <div class="card-badge">2023</div>
+                    </div>
+
+                    <a href="./files/Movies/Der-Junge-und-der-Reiher.html" class="card-btn" title="Der Junge und der Reiher"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+
+                <div class="movie-card">
+
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                    </figure>
+
+                    <h4 class="title">No Movie</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                            <span class="span">0.0</span>
+                        </div>
+
+                        <div class="card-badge">0000</div>
+                    </div>
+
+                    <a href="#" class="card-btn" title="No Movie"></a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="movie-list genre-list">
+
+        <div class="title-wrapper">
+            <h1 class="heading">All Movies</h3>
+        </div>
+
+        <div class="grid-list">
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <figure class="poster-box card-banner">
+                    <img src="./assets/images/video-bg-icon.png" alt="No Movie" class="img-cover">
+                </figure>
+
+                <h4 class="title">No Movie</h4>
+
+                <div class="meta-list">
+                    <div class="meta-item">
+                        <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+
+                        <span class="span">0.0</span>
+                    </div>
+
+                    <div class="card-badge">0000</div>
+                </div>
+
+                <a href="#" class="card-btn" title="No Movie"></a>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+</article>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchField = document.querySelector('.search-field');
+    
+        searchField.addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                const searchTerm = searchField.value.trim();
+                if (searchTerm !== '') {
+                    // Weiterleitung zur Search.html-Seite mit dem Suchbegriff als Query-Parameter
+                    window.location.href = `search.html?q=${encodeURIComponent(searchTerm)}`;
+                }
+            }
+        });
+    });
+    </script>    
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
